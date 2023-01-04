@@ -1,4 +1,4 @@
-# Manual-traduzido-do-DC3DD-
+# Manual-traduzido-do-DC3DD
 O DC3DD é uma aplicação personalizada para o universo da forense digital, essa é uma tradução livre do inglês para português brasil para facilitar o seu uso. 
 Comandos do usuário DC3DD(1) DC3DD(1) 
 
@@ -14,6 +14,7 @@ DESCRIÇÃO ------ uso: ------
  
            onde cada OPÇÃO é selecionada nas opções básicas ou avançadas listadas abaixo, ou OPÇÃO DE AJUDA é selecionada nas opções de ajuda 
            listado abaixo. 
+    
     -------------- opções básicas: -------------- 
  
     if=DISPOSITIVO ou ARQUIVO 
@@ -38,9 +39,9 @@ DESCRIÇÃO ------ uso: ------
            coloca). Especifique o tamanho máximo de cada arquivo no conjunto usando ofsz=. 
  
 
-hofs=BASE.FMT Grave a saída em um conjunto de arquivos com o nome base BASE e extensões de nome de arquivo gerados sequencialmente a partir do especificador de formato FMT (consulte a nota #4 abaixo para saber como especificar FMT). Faça um hash dos arquivos de saída e verifique comparando o(s) hash(es) de saída com o(s) hash(es) de entrada. Esta opção pode ser usada mais de uma vez (consulte a nota nº 3 abaixo para saber como gerar várias saídas). Especifique o tamanho máximo de cada arquivo no conjunto usando ofsz=. 
+    hofs=BASE.FMT Grave a saída em um conjunto de arquivos com o nome base BASE e extensões de nome de arquivo gerados sequencialmente a partir do especificador de formato FMT (consulte a nota #4 abaixo para saber como especificar FMT). Faça um hash dos arquivos de saída e verifique comparando o(s) hash(es) de saída com o(s) hash(es) de entrada. Esta opção pode ser usada mais de uma vez (consulte a nota nº 3 abaixo para saber como gerar várias saídas). Especifique o tamanho máximo de cada arquivo no conjunto usando ofsz=. 
 
-   ofsz=BYTES 
+    ofsz=BYTES 
            Defina o tamanho máximo de cada arquivo nos conjuntos de arquivos especificados usando ofs= ou hofs= para BYTES (consulte a nota nº 5 abaixo). Um valor padrão 
            para esta opção pode ser definido em tempo de compilação usando -DDEFAULT_OUTPUT_FILE_SIZE seguido pelo valor desejado em BYTES. 
  
@@ -67,9 +68,9 @@ hofs=BASE.FMT Grave a saída em um conjunto de arquivos com o nome base BASE e e
  
     rec=desligado 
            Por padrão, zeros são gravados na(s) saída(s) no lugar de setores defeituosos quando a entrada é um dispositivo. Use esta opção para fazer com que o 
-           programa para sair quando um setor defeituoso é encontrado 
+           programa para sair quando um setor defeituoso é encontrado.
             
-           wipe=DISPOSITIVO 
+    wipe=DISPOSITIVO 
            Limpe DEVICE escrevendo zeros (padrão) ou um padrão especificado por pat= ou tpat=. 
  
     hwipe=DISPOSITIVO 
@@ -142,7 +143,7 @@ hofs=BASE.FMT Grave a saída em um conjunto de arquivos com o nome base BASE e e
            O número de caracteres usados indica o comprimento desejado das extensões. Por exemplo, um especificador FMT de 0000 indica quatro 
            extensões numéricas de caracteres começando com 0000. 
  
-5. BYTES podem ser seguidos pelos seguintes sufixos multiplicativos: 
+    5. BYTES podem ser seguidos pelos seguintes sufixos multiplicativos: 
            c (1), w (2), b (512), kB (1000), K (1024), MB (1000*1000), M (1024*1024), GB (1000*1000*1000), G ( 1024*1024*1024), e assim por diante para 
            T, P, E, Z e Y 
             
@@ -157,19 +158,19 @@ hofs=BASE.FMT Grave a saída em um conjunto de arquivos com o nome base BASE e e
     dc3dd concluído em 2018-12-11 17:14:21 +0000 
  
 
-AUTOR Escrito por Paul Rubin, David MacKenzie, Stuart Kemp, Jesse Kornblum, Andrew Medico, Richard Cordovano e Justin Lowe. 
+    AUTOR Escrito por Paul Rubin, David MacKenzie, Stuart Kemp, Jesse Kornblum, Andrew Medico, Richard Cordovano e Justin Lowe. 
 
-RELATANDO BUGS Reporte bugs para dc3dd@dc3.mil . 
+    RELATANDO BUGS Reporte bugs para dc3dd@dc3.mil . 
 
-DIREITO AUTORAL Copyright © 2008 Free Software Foundation, Inc. Licença GPLv3+: GNU GPL versão 3 ou posterior http://gnu.org/licenses/gpl.html Este é um software livre: você é livre para alterá-lo e redistribuí-lo . NÃO HÁ GARANTIA, na medida permitida por lei. 
+    DIREITO AUTORAL Copyright © 2008 Free Software Foundation, Inc. Licença GPLv3+: GNU GPL versão 3 ou posterior http://gnu.org/licenses/gpl.html Este é um software livre: você é livre para alterá-lo e redistribuí-lo . NÃO HÁ GARANTIA, na medida permitida por lei. 
 
-VEJA TAMBÉM A documentação completa para dc3dd é mantida como um manual Texinfo. Se os programas info e dc3dd estiverem instalados corretamente em seu site, o comando 
+    VEJA TAMBÉM A documentação completa para dc3dd é mantida como um manual Texinfo. Se os programas info e dc3dd estiverem instalados corretamente em seu site, o comando 
 
           info dc3dd 
  
     deve dar-lhe acesso ao manual completo. 
  
 
-dc3dd 7.2.646 dezembro de 2018 DC3DD(1) 
+    dc3dd 7.2.646 dezembro de 2018 DC3DD(1) 
 
  
